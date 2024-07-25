@@ -348,8 +348,8 @@ a:focus {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top right;
-     object-position: top right;
+  -o-object-position: center 30%;
+     object-position: center 30%;
 }
 
 .shop_section .heading_container {
