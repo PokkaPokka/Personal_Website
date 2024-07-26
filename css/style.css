@@ -403,15 +403,10 @@ a:focus {
   height: 100%;
   position: relative;
   min-height: 275px;
+  min-width: 200px;
   border-radius: 5px;
   border: 1px solid #160e0b;
   overflow: hidden;
-}
-
-.project_section .rectangle {
-  background-color: #ffffff;
-  width: 100%;
-  height: 100%;
 }
 
 .project_section .heading_container {
@@ -427,53 +422,66 @@ a:focus {
 
 .project_section .box .detail-box {
   display: flex;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
   color: #fafafa;
   padding: 25px;
   background-color: #fafafa;
+  position: relative;
 }
 
 .project_section .box .detail-box h2 {
   font-size: 1.6rem;
   font-weight: bold;
   color: #160e0b;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .project_section .box .detail-box p {
-  position: absolute; /* Position the <p> tag absolutely */
-  top: 50px; /* Align to the top */
-  left: 15px; /* Align to the left */
-  font-size: 1rem; /* Adjust font size as needed */
-  color: #160e0b; /* Ensure text color is visible */
-  margin-bottom: 20px; /* Add margin to separate from other elements */
-  text-align: left; /* Center align text */
+  font-size: 1.1rem;
+  color: #160e0b;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center; /* Center the text within the paragraph */
+}
+
+.image-container {
+  align-self: flex-start; /* Align the container to the start horizontally */
+  margin-top: auto; /* Push the container to the bottom */
+  display: flex; /* Use flexbox to arrange children in a row */
+  align-items: center; /* Center align items vertically */
+  justify-content: flex-start; /* Align items to the start horizontally */
+}
+
+.css-img {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 5px; /* Add margin for spacing */
+}
+
+.ts-img {
+  width: 45px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 5px; /* Add margin for spacing */
+}
+
+.link {
+  margin: 5px;
 }
 
 .project_section .box .detail-box a {
   display: inline-block;
-  translate: (-50%, -50%);
-  width: 130px;
-  height: 50px;
   padding: 10px 10px;
   background-color: transparent;
   color: #fd9c6b;
   border-radius: 5px;
   border: 1px solid #fd9c6b;
   transition: all .2s;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -488,27 +496,6 @@ a:focus {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 60px;
-}
-
-.image-container {
-  position: absolute; /* Position the container absolutely */
-  bottom: 0; /* Align to the bottom */
-  left: 0; /* Align to the left */
-  display: flex; /* Use flexbox to arrange children in a row */
-  align-items: center; /* Center align items vertically */
-  justify-content: flex-start; /* Align items to the start horizontally */
-}
-
-.css-img {
-  width: 50px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin: 5px; /* Add margin for spacing */
-}
-
-.ts-img {
-  width: 50px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin: 5px; /* Add margin for spacing */
 }
 /* end project section */
 
@@ -665,8 +652,3 @@ a:focus {
   color: #fd9c6b;
 }
 /* end info section */
-
-My name is Yinuo Wu, you can call me Scott.
-I am currently studying at Northeastern University, 
-majoring in Computer Science and Music Technology.
-I am really looking forward to working with the team!
